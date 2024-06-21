@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="secondary">
+      <h1>Resultado Final</h1>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Resultado</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-title color="primary">
+    <h2>Detalle de farmacias encontradas</h2>
+  </ion-title>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Farmacia 1</ion-card-title>
+      <ion-card-subtitle>Horario Normal</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Dirección - Teléfono - Horario de Atención </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="medium">
+    <ion-card-header>
+      <ion-card-title>Farmacia 2</ion-card-title>
+      <ion-card-subtitle>Turno 24 horas</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Dirección - Teléfono - Horario de Atención </ion-card-content>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Farmacia 3</ion-card-title>
+      <ion-card-subtitle>Turno Emergencia</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Dirección - Teléfono - Horario de Atención </ion-card-content>
+  </ion-card>
+
+  <ion-button>Inicio</ion-button> <ion-button [disabled]="true">Salir</ion-button>
+
+</ion-content>

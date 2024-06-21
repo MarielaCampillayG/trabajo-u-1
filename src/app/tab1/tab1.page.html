@@ -1,7 +1,9 @@
+
 <ion-header [translucent]="true">
+  
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title color="secondary">
+      <h1>Buscar Farmacia</h1>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +11,32 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Inicio</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+  <ion-text color="primary">
+    <h1>Iniciar Sesión</h1>
+  </ion-text>
+
+  <ion-card color="light"> 
+    <ion-list>
+      <ion-item>
+        <ion-input labelPlacement="stacked" label="Ingresar Email" placeholder="email@domain.com">
+          <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+          <ion-button fill="clear" slot="end" aria-label="Show/hide">
+            <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-input type="password" label="Ingresar Clave" value="PasswordSegura">
+      <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+    </ion-input>
+  </ion-card>
+  <ion-button>Ingresar</ion-button>
+<!-- 
+<app-explore-container name="Inicio"></app-explore-container>
+hasta aqui -->
+</ion-content> 
