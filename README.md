@@ -82,7 +82,8 @@ Npm: ppm --version
 ### Perspectiva personal:
 - Desde mi perspectiva personal, estudiar todos los componentes de Ionic puede ser extenso, pero a medida que se avanza en el diseño, se aprende más sobre el framework. Lo más destacable es la gran cantidad de información disponible en la web, que resulta de gran utilidad. Para mí, Ionic es una herramienta fácil de usar y, con práctica, programar en ella se vuelve muy entretenido.
 
-# Agregar 2 complementos a la aplicación
+# Información relacionada con el desarrollo - Unidad 4 Parte A
+## Agregar 2 complementos a la aplicación
 
 ### Habilitar el GPS en el desarrollo de la aplicación,
  Para agregar el complemento de geolocalización se siguieron los siguientes pasos:
@@ -111,3 +112,35 @@ Npm: ppm --version
 
 ## Logros obtenidos en el proceso de instalación de complementos.
 - Si bien hay documentación del proceso de instalación de los complementos, tuve que rebuscar mayor detalle en otras comunidades de desarrolladores, esto finalmente es lo más valioso, la comunidad es fundamental en el proceso.
+
+### API PÚBLICA DE FARMACIAS EN CHILE
+- https://midas.minsal.cl/farmacia_v2/WS/getLocales.php -- Listado de farmacias del país
+- https://midas.minsal.cl/farmacia_v2/WS/getLocalesTurnos.php -- Listado de farmacias de turno
+
+# Información relacionada con el desarrollo - Unidad 4 Parte B
+
+### Generacion de Build y APK
+- Luego de generar todo el código del aplicativo, se debe generar el build en vscode para luego abrir el archivo en Android Studio. Para ellos se utilizaron los siguientes comandos.
+	- **ionic build --prod** // Este comando compilará tu aplicación Angular en la carpeta dist/, optimizada para producción.
+	- **npx cap add android** // Este comando agregará la plataforma Android al proyecto Capacitor.
+	- **npx cap copy** // Este comando copiará tu aplicación web desde dist/ a la carpeta correspondiente en el proyecto de Capacitor.
+	- **npx cap open android** // abrir Android Studio
+	- Desde Android Studio Generar APK Build -> Build Bundle(s) / APK(s) -> Build APK(s).
+
+
+### Logros
+ - Se logra habilitar el mapa en el aplicativo
+ - Conexión de JSON en aplicativo para que muestre las farmacias existentes
+ - El despliegue de las farmacias se realiza por ubicación del usuario o ingresando Región y Comuna
+ - Se habilita camara en aplicativo para indicar si existe o no la farmacia indicada por el aplicativo (mejora continua).
+
+### Problemas enfrentados:
+- Google modificó la forma en la que se realiza el llamado de la API. Se debió buscar información en documentación proporcionada por google.
+- El JSON proporcionado por el gobierno, presenta inestabilidad y confunde si es error del aplicativo o de la URL. Esto se solucionó con el manejo de error dentro del código. 
+
+### Perspectiva personal:
+- La codificación del servicio para buscar farmacias según la ubicación o dirección fue uno de los desafíos más grandes que enfrenté. Pensar en la lógica para manejar ambas opciones tomó más tiempo del esperado.
+
+- A medida que avanzaba en el desarrollo del programa, me volví más exigente conmigo mismo y comencé a detallar minuciosamente lo que el programa debería cumplir versus mis propias expectativas. Creo que con más tiempo y un poco más de conocimiento, esta aplicación podría convertirse en una herramienta realmente útil.
+
+- La creación funcional de este programa fue desafiante y en ocasiones estresante, pero sobre todo me llenó de satisfacción poder desarrollar algo que considero podría contribuir positivamente a la sociedad.
